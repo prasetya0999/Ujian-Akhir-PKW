@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>My Schedule </title>
+</head>
+
+<body>
+
+    <div class="main_wrapper">
+        <header class="heading">
+            My Schedule 
+        </header>
+        <main>
+            <!-- Add Tugas and Dolan -->
+            <section class="main-tugas-wrapper">
+                <div class="sub-tugas-wrapper">
+                    <div class="button-wrapper">
+                        <button class="add-tugas btn" id="tugasButton" value="add">Add Tugas</button>
+                        <button class="add-dolan btn" id="dolanButton" value="subtract">Add Dolan</button>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Enter Description" class="input-desc" id="itemName">
+                        <input type="datetime" placeholder="Tanggal" class="datetime" id="tanggal">
+                    </div>
+                    <button class="submit btn" id="submit">Save</button>
+                </div>
+            </section>
+            <section class="main-tugas-wrapper">
+                <div class="main-summery-wrapper">
+                    <p class="month" >Photo</p>
+                    <img src="image/01.jpg" width="150" height="150">
+                </div>
+            </section>
+
+            <!-- Dolan and Tugas Details -->
+            <section class="main-details">
+                <hr>
+                <div class="item-head">
+                    <h4>Tugas</h4>
+                    <h4>Batas Tanggal</h4>
+                </div>
+                <div class="item-wrapper" id="TugasItemWrapper">
+                    <div class="item">
+                        <div class="item-description">Activity 3 APBO</div>
+                        <div class="item-value tugasValue">20 Agustus 2021</div>
+                    </div>
+                    <div class="item">
+                        <div class="item-description">Activity 5 IPC</div>
+                        <div class="item-value tugasValue">26 Agustus 2021</div>
+                    </div>
+                </div>
+            </section>
+            <!-- Dolan Item and value -->
+            <section class="main-details">
+                <hr>
+                <div class="item-head">
+                    <h4>Dolan</h4>
+                    <h4>Cuss Tanggal</h4>
+                </div>
+                <div class="item-wrapper" id="DolanItemWrapper">
+                    <div class="item">
+                        <div class="item-description">Pantai</div>
+                        <div class="item-value">01 Januari 2022</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>Designed By Prasetya Agung Prayoga_  <a href="https://github.com/prasetya0999"
+            target="_blank"> Profil</a></footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
